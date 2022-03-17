@@ -40,11 +40,11 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: #000 !important; /* use important override link colors for <a> elements */
+    color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
-btn-outline-black-hover,
+.btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: black;
@@ -74,13 +74,32 @@ btn-outline-black-hover,
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
     position: fixed;
-    background: white;
-    z-index: -1;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
 }
 
 /* -------------------------------- Media Queries */
