@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='product',
-            name='has_sizes',
+            name='has_sized',
             field=models.BooleanField(blank=True, default=False, null=True),
         ),
     ]
